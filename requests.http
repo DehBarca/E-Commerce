@@ -1,0 +1,76 @@
+@host = http://localhost:3100
+
+### OBTENER TODOS LOS PRODUCTOS (NO ADMINISTRADOR)
+GET {{host}}/products
+
+### OBTENER TODOS LOS PRODUCTOS CON STOCK (ADMIN)
+GET {{host}}/products
+x-auth: admin
+
+### FILTRAR PRODUCTOS POR TÍTULO
+GET {{host}}/products?title=manzana
+
+### FILTRAR PRODUCTOS POR CATEGORÍA
+GET {{host}}/products?category=frutas
+
+### FILTRAR PRODUCTOS POR TÍTULO Y CATEGORÍA
+GET {{host}}/products?title=manzana&category=frutas
+### CONSULTAR PRODUCTO POR ID
+GET {{host}}/products/0Dm2BSGXc
+
+### CREAR NUEVO PRODUCTO (ADMIN)
+POST {{host}}/products
+x-auth: admin
+Content-Type: application/json
+
+{
+  "imageUrl": "https://example.com/manzana.jpg",
+  "title": "Papaya",
+  "description": "Papaya fresca",
+  "unit": "kg",
+  "category": "frutas",
+  "pricePerUnit": 45.50,
+  "stock": 100
+}
+
+### ACTUALIZAR PRODUCTO POR ID (ADMIN)
+PUT {{host}}/products/VAX9dB_hs
+x-auth: admin
+Content-Type: application/json
+
+{
+  "imageUrl": "https://example.com/image.jpg",
+  "title": "Manzana Golden",
+  "description": "Manzana fresca y dulce",
+  "unit": "kg",
+  "category": "frutas",
+  "pricePerUnit": 55.00,
+  "stock": 80
+}
+
+### ELIMINAR PRODUCTO POR ID (ADMIN)
+DELETE {{host}}/products/qTT5VvMhg
+x-auth: admin
+
+### OBTENER TODOS LOS ARTÍCULOS DEL CARRITO
+GET {{host}}/cart
+x-user: juan
+
+### AÑADIR ARTÍCULOS AL CARRITO
+POST {{host}}/cart
+x-user: juan
+Content-Type: application/json
+
+{
+    "uuid": "def457",
+    "imageUrl": "https://elpoderdelconsumidor.org/wp-content/uploads/2021/05/zanahorias-baby-300x200.png",
+    "title": "Zanahoria",
+    "description": "Zanahoria Fresca",
+    "unit": "kg",
+    "category": "verduras",
+    "pricePerUnit": 39.92
+}
+
+### ELIMINAR ARTÍCULO DEL CARRITO POR ID
+DELETE {{host}}/cart/def457
+x-user: juan

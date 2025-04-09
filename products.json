@@ -1,0 +1,72 @@
+[
+  {
+    "uuid": "def457",
+    "imageUrl": "https://elpoderdelconsumidor.org/wp-content/uploads/2021/05/zanahorias-baby-300x200.png",
+    "title": "Zanahoria",
+    "description": "Zanahoria Fresca",
+    "unit": "kg",
+    "category": "verduras",
+    "pricePerUnit": 39.92,
+    "stock": 50
+  },
+  {
+    "uuid": "def458",
+    "imageUrl": "https://example.com/papa.jpg",
+    "title": "Papa",
+    "description": "Papa fresca",
+    "unit": "kg",
+    "category": "verduras",
+    "pricePerUnit": 99.99,
+    "stock": 50
+  },
+  {
+    "uuid": "ghi459",
+    "imageUrl": "https://example.com/tomate.jpg",
+    "title": "Tomate",
+    "description": "Tomate fresco",
+    "unit": "kg",
+    "category": "verduras",
+    "pricePerUnit": 45.5,
+    "stock": 100
+  },
+  {
+    "uuid": "abc126",
+    "imageUrl": "https://example.com/manzana.jpg",
+    "title": "Pera",
+    "description": "Pera fresca",
+    "unit": "kg",
+    "category": "frutas",
+    "pricePerUnit": 45.5,
+    "stock": 100
+  },
+  {
+    "imageUrl": "https://example.com/manzana.jpg",
+    "title": "Jitomate",
+    "description": "Jitomate fresco",
+    "unit": "kg",
+    "category": "frutas",
+    "pricePerUnit": 45.5,
+    "stock": 100,
+    "uuid": "0Dm2BSGXc"
+  },
+  {
+    "imageUrl": "https://example.com/manzana.jpg",
+    "title": "Melón",
+    "description": "Melón fresco",
+    "unit": "kg",
+    "category": "frutas",
+    "pricePerUnit": 45.5,
+    "stock": 100,
+    "uuid": "jUAJ2mzXN"
+  },
+  {
+    "imageUrl": "https://example.com/image.jpg",
+    "title": "Manzana Golden",
+    "description": "Manzana fresca y dulce",
+    "unit": "kg",
+    "category": "frutas",
+    "pricePerUnit": 55,
+    "stock": 80,
+    "uuid": "VAX9dB_hs"
+  }
+]

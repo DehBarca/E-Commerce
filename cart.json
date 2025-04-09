@@ -1,0 +1,12 @@
+[
+  {
+    "uuid": "abc352",
+    "imageUrl": "https://example.com/pepe.jpg",
+    "title": "Pepe",
+    "description": "Pepe fresco",
+    "unit": "kg",
+    "category": "verduras",
+    "pricePerUnit": 39.92,
+    "stock": 50
+  }
+]
